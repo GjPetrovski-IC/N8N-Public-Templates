@@ -40,5 +40,21 @@ If you prefer a simpler setup or are just experimenting, you can skip this funct
 1. Open your **Supabase Dashboard**
 2. Go to **SQL Editor**
 3. Copy the contents of:
+supabase/enrich_lead.sql
+4. Paste it into the SQL editor
+5. Click **Run**
+
+That’s it — the function is now available in your database.
+
+---
+
+### Function signature
+
+```sql
+public.enrich_lead(
+  p_creator_handle TEXT,
+  p_platform TEXT,
+  p_payload JSONB
+)
 
 
